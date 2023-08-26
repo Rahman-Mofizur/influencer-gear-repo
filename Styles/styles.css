@@ -1,0 +1,106 @@
+:root {
+  --primary-background-color: #e02c6d;
+}
+
+/* Shared styles */
+
+* {
+  font-family: "Courier Prime", monospace;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.font-style-small {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-primary {
+  background-color: var(--primary-background-color);
+  color: aliceblue;
+  padding: 5px 24px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+/*  */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 120px;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-container li {
+  padding-right: 30px;
+}
+
+/* Banner styles */
+.banner {
+  margin: 120px 180px 140px 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  align-items: center;
+  padding: 40px 0px;
+  background-image: url("../images/Circle design.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  /* background-size: 35% auto; */
+}
+.banner .camera {
+  width: auto;
+}
+
+.banner h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 16px;
+}
+
+.banner-par-margin {
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list ul {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .banner .camera {
+    width: 80%;
+  }
+  .banner {
+    margin: 120px auto;
+    flex-direction: column-reverse;
+    background-position: top;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner-par-margin {
+    margin: 30px 50px;
+  }
+  .button-primary {
+    margin: auto;
+  }
+}
